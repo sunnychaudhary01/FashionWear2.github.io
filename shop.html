@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media.css">
+        <title>Shop</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Poppins&display=swap');
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    height: 300px;
+    padding-left: 150px;
+}
+.cards-div{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    margin-bottom: 150px;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.cards > button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+.cards > button:hover{
+    transition: 0.3s ease;
+    background-color: bisque;
+    color: #000;
+}
+.cards > p{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.cards > img{
+    height: 280px;
+    object-fit: cover;
+    width: 220px;
+    /* padding-bottom: 20px; */
+}
+.cards > img:hover{
+    opacity: 75%;
+}
+.pagination {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  padding: 0;
+  height: 0;
+}
+.pagination button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid black;
+    background: transparent;
+    color: #000;
+    transition: 0.3s ease;
+}
+.pagination > button:hover{
+    transition: 0.3s ease;
+    background-color:#000;
+    color:  bisque;
+}
+</style>
+<body >
+    <header>
+        <!-- Navbar----------->
+        <div class="navbar">
+            <div class="burger">
+                <img src="images/hamburger.png" alt="" id="burger">
+            </div>
+            <!-- resposive menu -->
+            <div class="logo">
+                <p>FashionWear.</p>
+            </div>
+            <div class="menu">
+                <img src="images/exit.png" alt="" class="image">
+                <ul id="list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="/men.html">Men</a></li>
+                    <li><a href="/womens.html">Women</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <input type="text" placeholder="Search">
+                <img id="cart" src="/images/9349901.png" alt="Search-icon">
+                <img id="bag" src="/images/icons8-bag-64.png" alt="Cart-icon">
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="feature-section">
+        <div class="feature">
+            <h1>Our Featured</h1>
+            <hr class="line">
+            <p>Here you can check out new products with best price on fashion wear.</p>
+        </div>
+        </div>
+        <div class="cards-div" id="Mshopcards">
+            <div class="cards" id="shopcards">
+                <img src="images/Women jumpsuits/61vIrnI3qkL._SX679_.jpg" alt="">
+                <p>Women jumpsuits</p>
+                <h2>$40.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shoes/sport/81vwzdHWcFL._SY625_.jpg" alt="">
+                <p>Sport shoes Black</p>
+                <h2>$20.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/sport bags/Gym bags/61BZ+W-Mh2L.jpg" alt="">
+                <p>Branded Sport bags</p>
+                <h2>$90.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/img/clothes/3.jpg" alt="">
+                <p>Women T-shirts</p>
+                <h2>$10.00</h2>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <!-- products-2 -->
+        <div class="cards-div" id="Mshopcards">
+            <div class="cards" id="shopcards">
+                <img src="images/sport caps/Caps Sports Caps/grey.jpg" alt="">
+                <p>Sports Caps Grey</p>
+                <h2>$40.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shirts/Denims/Denim olive jacket.jpg" alt="">
+                <p>Denim olive jacket</p>
+                <h2>$20.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/glasses/Round Sunglasses for men and women (Black)/51KF3UKiBmL._SY741_.jpg" alt="">
+                <p>Round Sunglasses</p>
+                <h2>$90.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shoes/boots/chalsea boots/71H7I-T+g8L._SY695_.jpg" alt="">
+                <p>Black Chalsea Boot</p>
+                <h2>$10.00</h2>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <!-- products-3 -->
+        <div class="cards-div" id="Mshopcards">
+            <div class="cards" id="shopcards">
+                <img src="images/sport caps/winter caps/coal grey.jpg " alt="">
+                <p>Winter Caps Coal Grey</p>
+                <h2>$40.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Watches/casio Watches/61TvZ2+ba8L._SX466_.jpg" alt="">
+                <p>Casio G-shock Watche</p>
+                <h2>$20.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shoes/boots/Eego Italy Synthetic Stylish/71WMncy1niL._SY695_.jpg" alt="">
+                <p>Eego Italy Black Boot</p>
+                <h2>$90.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/sport bags/Backpacls/71s-V9WbyuL._SX679_.jpg" alt="">
+                <p>Sport Grey Bagpack</p>
+                <h2>$10.00</h2>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+          <!-- products-4 -->
+          <div class="cards-div" id="Mshopcards">
+            <div class="cards" id="shopcards">
+                <img src="images/Watches/Smart Watches/61gnwDgVZbL._SX679_.jpg " alt="">
+                <p>Smart Watches</p>
+                <h2>$40.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shirts/Tshits/51eyP4V2LUL._SY741_.jpg" alt="">
+                <p>Men t-shirts</p>
+                <h2>$20.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shoes/Casuals/81Vj658+g+L._SY625_.jpg" alt="">
+                <p>Casio Shoes</p>
+                <h2>$90.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/sport bags/Gym bags/51CIfceWUJL._SX679_.jpg" alt="">
+                <p>Sport Gym Bags</p>
+                <h2>$10.00</h2>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <!-- products-5 -->
+        <div class="cards-div" id="Mshopcards">
+            <div class="cards" id="shopcards">
+                <img src="images/Women dresses/61x-hEF+rOL._SY741_.jpg " alt="">
+                <p>Women dresses</p>
+                <h2>$40.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/glasses/Gaming Filter Square Eyeglasses for Eye Protection Men Women/LIGHT BLUE.jpg" alt="">
+                <p>Filter Square Eyeglasses</p>
+                <h2>$20.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shirts/formal/Navy formal medium blue shirt.jpg" alt="">
+                <p>Formal Shirts</p>
+                <h2>$90.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Watches/Leather Watches/Fossil-Watch-FS5060fw1500fh1500w.jpg" alt="">
+                <p>Leather Wrist Watches</p>
+                <h2>$10.00</h2>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <!-- products-6 -->
+        <div class="cards-div" id="Mshopcards">
+            <div class="cards" id="shopcards">
+                <img src="images/Watches/chain watches/81wb7f9TzoL._SX385_.jpg " alt="">
+                <p>Wrist Chain Watches</p>
+                <h2>$40.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Women denims/71lgm8F3GwL._SX679_.jpg" alt="">
+                <p>Women Denims</p>
+                <h2>$20.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/Shoes/Loafers/71tsYtPJfyL._SY625_.jpg" alt="">
+                <p>Loafer Shoes</p>
+                <h2>$90.00</h2>
+                <button>BUY NOW</button>
+            </div>
+            <div class="cards" id="shopcards">
+                <img src="images/sport caps/Caps Sports Caps/images (5).jpg" alt="">
+                <p>Sport Caps</p>
+                <h2>$10.00</h2>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+<!-- products-7 -->
+        <div class="cards-div" id="Mshopcards">
+    <div class="cards" id="shopcards">
+        <img src="images/Women formal shirts/41oAhPBk9DL.jpg " alt="">
+        <p>Women Formal Shirts</p>
+        <h2>$40.00</h2>
+        <button>BUY NOW</button>
+    </div>
+    <div class="cards" id="shopcards">
+        <img src="images/img/shop/11.jpg" alt="">
+        <p>Hats</p>
+        <h2>$20.00</h2>
+        <button>BUY NOW</button>
+    </div>
+    <div class="cards" id="shopcards">
+        <img src="images/img/shop/19.jpg" alt="">
+        <p>Mens Hoodies</p>
+        <h2>$90.00</h2>
+        <button>BUY NOW</button>
+    </div>
+    <div class="cards" id="shopcards">
+        <img src="images/img/shop/8.jpg" alt="">
+        <p>Winter jackets</p>
+        <h2>$10.00</h2>
+        <button>BUY NOW</button>
+    </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-sec">
+        <div class="footer-logo">
+           <p>FashionWear.</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+             Tenetur maiores ut saepe. Ipsa, veritatis minus! <br> Lorem ipsum dolor sit amet.
+             <br>
+             Tenetur maiores ut saepe. Ipsa, veritatis minus! <br> Lorem ipsum dolor sit amet.
+             </span>
+        </div>
+        <div class="featured">
+            <h2>Featured</h2>
+                <span>MEN</span>
+                <span>WOMEN</span>
+                <span>GIRLS</span>
+                <span>BOYS</span>
+                <span>CLOTHS</span>
+                <span>SHOES</span>
+        </div>
+        <div class="contact-sec">
+            <span>Contact Us</span>
+            <h2>ADDRESS</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <h2>PHONE</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <h2>EMAIL</h2>
+            <p>MAIL@EXAMPLE.COM</p>
+        </div>
+        <div class="social-media">
+            <h2>Instagram</h2>
+        <div class="social-media-img">
+            <img src="images/footer/insta/1.jpg" alt="">
+            <img src="images/footer/insta/2.jpg" alt="">
+            <img src="images/footer/insta/3.jpg" alt="">
+            <img src="images/footer/insta/4.jpg" alt="">
+            <img src="images/footer/insta/5.jpg" alt="">
+            <img src="images/footer/insta/6.jpg" alt="">
+        </div>
+        </div>
+    </div>
+        <div class="payment-social-media">
+            <div class="payment-cards">
+                <img src="images/footer/payment.png" alt="">    
+            </div>
+            <p>FashionWear eCommerce c 2023. All Right Reserved By Sunny.</p>
+            <div class="social-link">
+                <img class="footer-img" src="images/footer/icons8-instagram-50.png" alt="">
+                <img class="footer-img" src="images/footer/icons8-gmail-50.png" alt="">
+                <img class="footer-img" src="images/footer/icons8-linkedin-50.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
